@@ -12,6 +12,13 @@
 4. git add 命令就是把文件添加到暂存区
 5. git commit就是往分支上提交修改。
 
+**git免密登录配置**
+```
+git config --global user.name "smyhvae"
+
+git config --global user.email "smyhvae@163.com"
+```
+
 **git常用命令**
 ```
 git checkout -b dev  // 一个命令完成创建到切换
@@ -25,6 +32,13 @@ git reset HEAD <file> // 撤销暂存区的修改
 git log --pretty=oneline // 查看日志
 git reflog     // 查看命令，包括回退命令
 git reset --hard 1094a // 回退版本
+git tag <tagname>      // 用于新建一个标签
+git tag -a <tagname> -m "blablabla..." // 可以指定标签信息
+git tag                // 可以查看所有标签
+git push origin <tagname>  // 可以推送一个本地标签；
+git push origin --tags     // 可以推送全部未推送过的本地标签；
+git tag -d <tagname>       // 可以删除一个本地标签
+git push origin :refs/tags/<tagname> // 可以删除一个远程标签
 ```
 
 
