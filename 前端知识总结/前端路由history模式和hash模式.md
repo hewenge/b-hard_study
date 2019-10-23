@@ -32,7 +32,7 @@
 ```
 history.go(2)      // 跳转
 history.back()     // 后退
-history.forward()  // 前进
+history.forward()  // 前进cd 
 ```
 
 * 修改：
